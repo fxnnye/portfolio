@@ -1,0 +1,268 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #3B72F5;
+  --white: #ffffff;
+  --side: clamp(1.5rem, 12vw, 16rem);
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 160;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+/* ── HOME ── */
+body.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 var(--side);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.home-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(3.5rem, 13vw, 13rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.home-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: clamp(1.2rem, 3vw, 3rem);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.7rem);
+  text-transform: lowercase;
+}
+
+.home-footer {
+  position: fixed;
+  bottom: 2rem;
+  right: var(--side);
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 160;
+  opacity: 0.85;
+}
+
+/* ── INNER PAGES ── */
+body.inner {
+  padding: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--side);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  text-transform: lowercase;
+}
+
+/* ── ABOUT ── */
+.about-section {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: clamp(2rem, 4vw, 5rem);
+  padding: 2rem var(--side) 4rem;
+  align-items: start;
+}
+
+.about-photo {
+  width: 100%;
+  display: block;
+}
+
+.about-text h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 7vw, 6.5rem);
+  line-height: 0.9;
+  text-transform: lowercase;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 160;
+  font-size: clamp(15px, 1.5vw, 20px);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-section-2 {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  gap: clamp(2rem, 4vw, 5rem);
+  padding: 0 var(--side) 5rem;
+  align-items: start;
+  margin-top: 0;
+}
+
+.about-section-2 p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 160;
+  font-size: clamp(15px, 1.5vw, 20px);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-section-2 p + p {
+  margin-top: 0.75rem;
+}
+
+.about-section-2 .contact-link {
+  display: block;
+  margin-top: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  text-transform: lowercase;
+}
+
+.polaroid-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.polaroid {
+  width: 100%;
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+}
+
+/* ── CONTACT ── */
+.contact-banner {
+  width: calc(100% - var(--side) * 2);
+  margin: 2rem auto 0;
+  height: clamp(180px, 25vw, 380px);
+  object-fit: cover;
+  display: block;
+}
+
+.contact-body {
+  padding: 3rem var(--side) 5rem;
+}
+
+.contact-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.contact-col h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 0.9;
+  text-transform: lowercase;
+  margin-bottom: 3rem;
+}
+
+.contact-col-right {
+  text-align: right;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  text-transform: lowercase;
+  flex-wrap: wrap;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .home-title {
+    font-size: clamp(3.5rem, 18vw, 6rem);
+    white-space: normal;
+  }
+
+  .home-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .home-footer {
+    bottom: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+  }
+
+  .about-section-2 {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+
+  .polaroid-wrap {
+    justify-content: flex-start;
+  }
+
+  .about-text p,
+  .about-section-2 p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .contact-sections {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .contact-col-right {
+    text-align: left;
+  }
+}
