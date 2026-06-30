@@ -90,7 +90,7 @@ body.inner {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 3.5rem var(--side) 2rem;
+  padding: 5rem var(--side) 2rem;
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
