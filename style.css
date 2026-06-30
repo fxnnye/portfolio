@@ -89,7 +89,7 @@ body.inner {
 .topnav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 2rem var(--side);
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
