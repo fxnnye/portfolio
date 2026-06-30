@@ -203,6 +203,7 @@ body.inner {
   font-size: clamp(2.5rem, 7vw, 5.5rem);
   line-height: 0.9;
   text-transform: lowercase;
+  letter-spacing: -0.04em;
   margin-bottom: 3rem;
 }
 
