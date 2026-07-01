@@ -116,6 +116,7 @@ body.inner {
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
+  -webkit-text-stroke: 1px var(--white);
   font-size: clamp(2.5rem, 7vw, 6.5rem);
   line-height: 0.9;
   text-transform: lowercase;
@@ -200,6 +201,7 @@ body.inner {
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
+  -webkit-text-stroke: 1px var(--white);
   font-size: clamp(2.5rem, 7vw, 5.5rem);
   line-height: 0.9;
   text-transform: lowercase;
