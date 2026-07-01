@@ -60,6 +60,15 @@ body.home {
   white-space: nowrap;
 }
 
+.home-title-name {
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  vertical-align: baseline;
+  margin-left: 0.15rem;
+}
+
 .home-nav {
   display: flex;
   flex-wrap: nowrap;
