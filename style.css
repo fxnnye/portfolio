@@ -157,7 +157,7 @@ body.inner {
   margin-top: 2rem;
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   text-transform: lowercase;
 }
