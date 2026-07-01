@@ -124,8 +124,8 @@ body.inner {
 }
 
 .about-text p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 160;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
   font-size: clamp(15px, 1.5vw, 20px);
   line-height: 1.6;
   text-align: justify;
@@ -141,8 +141,8 @@ body.inner {
 }
 
 .about-section-2 p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 160;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
   font-size: clamp(15px, 1.5vw, 20px);
   line-height: 1.6;
   text-align: justify;
