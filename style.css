@@ -23,10 +23,9 @@ a {
   color: var(--white);
   text-decoration: underline;
   text-underline-offset: 3px;
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: -0.05em;
 }
 
 a:hover {
@@ -51,12 +50,12 @@ body.home {
 }
 
 .home-title {
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: clamp(3.5rem, 13vw, 13rem);
   line-height: 0.88;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   text-transform: lowercase;
   white-space: nowrap;
 }
@@ -65,10 +64,9 @@ body.home {
   display: flex;
   flex-wrap: nowrap;
   gap: clamp(1.2rem, 3vw, 3rem);
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: -0.05em;
   font-size: clamp(1rem, 2vw, 1.7rem);
   text-transform: lowercase;
 }
@@ -93,10 +91,9 @@ body.inner {
   justify-content: space-between;
   align-items: baseline;
   padding: 5rem var(--side) 2rem;
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: -0.05em;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   text-transform: lowercase;
 }
@@ -116,11 +113,10 @@ body.inner {
 }
 
 .about-text h1 {
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   -webkit-text-stroke: 1px var(--white);
-  letter-spacing: -0.05em;
   font-size: clamp(2.5rem, 7vw, 6.5rem);
   line-height: 0.9;
   text-transform: lowercase;
@@ -159,10 +155,9 @@ body.inner {
 .about-section-2 .contact-link {
   display: block;
   margin-top: 2rem;
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.05em;
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   text-transform: lowercase;
 }
@@ -203,14 +198,14 @@ body.inner {
 }
 
 .contact-col h1 {
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   -webkit-text-stroke: 1px var(--white);
   font-size: clamp(2.5rem, 7vw, 5.5rem);
   line-height: 0.9;
   text-transform: lowercase;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
   margin-bottom: 3rem;
 }
 
@@ -222,9 +217,8 @@ body.inner {
   display: flex;
   flex-direction: row;
   gap: clamp(1rem, 2.5vw, 2.5rem);
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
-  letter-spacing: -0.05em;
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   text-transform: lowercase;
   flex-wrap: wrap;
