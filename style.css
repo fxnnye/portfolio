@@ -293,9 +293,17 @@ body.inner {
     text-align: left;
   }
 
+  .contact-body {
+    padding: 2rem var(--side) 2rem;
+  }
+
   .contact-sections {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
+  }
+
+  .contact-col h1 {
+    margin-bottom: 2rem;
   }
 
   .contact-col-right {
