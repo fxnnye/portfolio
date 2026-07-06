@@ -243,8 +243,12 @@ body.inner {
   .home-title-name {
     display: block;
     margin-left: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     font-size: 1rem;
+  }
+
+  .home-main {
+    gap: 2.5rem;
   }
 
   .home-nav {
@@ -258,6 +262,8 @@ body.inner {
 
   .contact-banner {
     margin-top: 0;
+    height: auto;
+    aspect-ratio: 2.6 / 1;
   }
 
   .home-footer {
@@ -267,6 +273,7 @@ body.inner {
 
   .about-section {
     grid-template-columns: 1fr;
+    padding-top: 0;
     padding-bottom: 2rem;
   }
 
