@@ -189,7 +189,7 @@ body.inner {
 /* ── CONTACT ── */
 .contact-banner {
   width: calc(100% - var(--side) * 2);
-  margin: 2rem auto 0;
+  margin: 4rem auto 0;
   height: clamp(180px, 25vw, 380px);
   object-fit: cover;
   display: block;
