@@ -192,6 +192,7 @@ body.inner {
   margin: 2rem auto 0;
   height: clamp(180px, 25vw, 380px);
   object-fit: cover;
+  object-position: center 72%;
   display: block;
 }
 
