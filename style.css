@@ -233,6 +233,32 @@ body.inner {
   flex-wrap: wrap;
 }
 
+/* ── TABLET ── */
+@media (max-width: 900px) {
+  :root {
+    --side: clamp(2rem, 8vw, 6rem);
+  }
+
+  .about-section,
+  .about-section-2 {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-photo,
+  .polaroid {
+    max-width: 480px;
+  }
+
+  .polaroid-wrap {
+    justify-content: flex-start;
+  }
+
+  .about-section-2 {
+    padding-bottom: 4rem;
+  }
+}
+
 /* ── MOBILE ── */
 @media (max-width: 600px) {
   .home-title {
