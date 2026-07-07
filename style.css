@@ -262,7 +262,7 @@ body.inner {
   }
 
   .contact-banner {
-    margin-top: 2rem;
+    margin-top: 0;
     height: auto;
     aspect-ratio: 2.6 / 1;
   }
