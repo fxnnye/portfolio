@@ -6,7 +6,7 @@
 }
 
 :root {
-  --blue: #0038A6;
+  --blue: #201AC5;
   --white: #ffffff;
   --side: clamp(3.5rem, 14vw, 18rem);
 }
