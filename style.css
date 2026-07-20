@@ -8,6 +8,7 @@
 :root {
   --blue: #201AC5;
   --white: #ffffff;
+  --pink: #E4007C;
   --side: clamp(3.5rem, 14vw, 18rem);
 }
 
@@ -29,7 +30,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.75;
+  color: var(--pink);
+  opacity: 1;
 }
 
 /* ── HOME ── */
