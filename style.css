@@ -189,13 +189,26 @@ body.inner {
 }
 
 /* ── CONTACT ── */
-.contact-banner {
+.contact-banner-wrap {
+  position: relative;
   width: calc(100% - var(--side) * 2);
   margin: 2rem auto 0;
+}
+
+.contact-banner {
+  width: 100%;
   height: clamp(180px, 25vw, 380px);
   object-fit: cover;
   object-position: center 72%;
   display: block;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  width: clamp(60px, 8vw, 110px);
+  pointer-events: none;
 }
 
 .contact-body {
