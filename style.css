@@ -206,7 +206,7 @@ body.inner {
 .price-tag {
   position: absolute;
   bottom: -1.5rem;
-  right: 0.75rem;
+  right: -1.5rem;
   width: clamp(60px, 8vw, 110px);
   pointer-events: none;
 }
