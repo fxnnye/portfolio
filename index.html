@@ -11,11 +11,47 @@
 </head>
 <body class="home">
   <main class="home-main">
-    <h1 class="home-title">portfolio<span class="home-title-name">finn freund</span></h1>
+    <h1 class="home-title"><span id="scramble-title">portfolio</span><span class="home-title-name">finn freund</span></h1>
     <nav class="home-nav">
       <a href="/about">about me</a>
       <a href="/contact">contact/socials</a>
     </nav>
   </main>
+
+  <script>
+    const target = 'portfolio';
+    const el = document.getElementById('scramble-title');
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
+    const cycles = 10;
+    const stepDelay = 35;
+    const letterStagger = 60;
+
+    function animateLetter(index) {
+      const finalChar = target[index];
+      let count = 0;
+
+      const interval = setInterval(() => {
+        const current = el.textContent.split('');
+        current[index] = finalChar === ' '
+          ? ' '
+          : letters[Math.floor(Math.random() * letters.length)];
+        el.textContent = current.join('');
+        count++;
+
+        if (count >= cycles) {
+          clearInterval(interval);
+          const done = el.textContent.split('');
+          done[index] = finalChar;
+          el.textContent = done.join('');
+        }
+      }, stepDelay);
+    }
+
+    el.textContent = target.split('').map(c => c === ' ' ? ' ' : letters[0]).join('');
+
+    target.split('').forEach((_, i) => {
+      setTimeout(() => animateLetter(i), i * letterStagger);
+    });
+  </script>
 </body>
 </html>
