@@ -11,7 +11,7 @@
 </head>
 <body class="home">
   <main class="home-main">
-    <h1 class="home-title"><span id="scramble-title">portfolio</span><span class="home-title-name">finn freund</span></h1>
+    <h1 class="home-title"><span id="scramble-title"></span><span class="home-title-name">finn freund</span></h1>
     <nav class="home-nav">
       <a href="/about">about me</a>
       <a href="/contact">contact/socials</a>
@@ -26,28 +26,42 @@
     const stepDelay = 60;
     const letterStagger = 100;
 
+    const spans = target.split('').map(char => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.display = 'inline-block';
+      span.style.textAlign = 'center';
+      span.style.overflow = 'hidden';
+      span.style.verticalAlign = 'top';
+      el.appendChild(span);
+      return span;
+    });
+
+    spans.forEach(span => {
+      span.style.width = span.getBoundingClientRect().width + 'px';
+    });
+
     function animateLetter(index) {
       const finalChar = target[index];
+      const span = spans[index];
       let count = 0;
 
       const interval = setInterval(() => {
-        const current = el.textContent.split('');
-        current[index] = finalChar === ' '
+        span.textContent = finalChar === ' '
           ? ' '
           : letters[Math.floor(Math.random() * letters.length)];
-        el.textContent = current.join('');
         count++;
 
         if (count >= cycles) {
           clearInterval(interval);
-          const done = el.textContent.split('');
-          done[index] = finalChar;
-          el.textContent = done.join('');
+          span.textContent = finalChar;
         }
       }, stepDelay);
     }
 
-    el.textContent = target.split('').map(c => c === ' ' ? ' ' : letters[0]).join('');
+    spans.forEach((span, i) => {
+      span.textContent = target[i] === ' ' ? ' ' : letters[0];
+    });
 
     target.split('').forEach((_, i) => {
       setTimeout(() => animateLetter(i), i * letterStagger);
