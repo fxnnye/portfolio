@@ -60,6 +60,14 @@ body.home {
   letter-spacing: -0.02em;
   text-transform: lowercase;
   white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home-title-img {
+  height: clamp(3.08rem, 11.44vw, 11.44rem);
+  width: auto;
+  display: block;
 }
 
 .home-title-name {
