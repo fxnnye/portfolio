@@ -65,7 +65,7 @@ body.home {
 }
 
 .home-title-img {
-  width: clamp(10rem, 40vw, 30rem);
+  width: clamp(15rem, 60vw, 45rem);
   height: auto;
   display: block;
   user-select: none;
