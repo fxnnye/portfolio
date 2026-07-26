@@ -68,6 +68,9 @@ body.home {
   width: clamp(10rem, 40vw, 30rem);
   height: auto;
   display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .home-title-name {
