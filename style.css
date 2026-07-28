@@ -38,9 +38,9 @@ a:hover {
 body.home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 var(--side);
+  padding: 5rem var(--side) 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -65,8 +65,8 @@ body.home {
 }
 
 .home-title-img {
-  width: clamp(15rem, 60vw, 45rem);
-  height: auto;
+  height: clamp(1.6rem, 3vw, 2.4rem);
+  width: auto;
   display: block;
   user-select: none;
   -webkit-user-select: none;
@@ -291,10 +291,6 @@ body.inner {
   .home-title {
     font-size: clamp(3.5rem, 18vw, 6rem);
     white-space: normal;
-  }
-
-  .home-title-img {
-    transform: translateY(-2.5rem);
   }
 
   .home-title-name {
