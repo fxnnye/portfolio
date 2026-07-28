@@ -132,8 +132,8 @@ body.inner {
 .nav-trigger {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 2rem;
+  transform: translateX(-50%);
   background: none;
   border: none;
   padding: 0;
