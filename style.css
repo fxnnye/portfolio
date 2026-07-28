@@ -293,6 +293,10 @@ body.inner {
     white-space: normal;
   }
 
+  .home-title-img {
+    transform: translateY(-2.5rem);
+  }
+
   .home-title-name {
     display: block;
     text-align: right;
