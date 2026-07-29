@@ -54,6 +54,7 @@ body.home {
   font-weight: 400;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   text-transform: lowercase;
+  position: relative;
 }
 
 .home-nav-logo {
@@ -129,15 +130,21 @@ body.inner {
   position: relative;
 }
 
-.nav-trigger {
+.nav-center {
   position: absolute;
   left: 50%;
   bottom: 2rem;
   transform: translateX(-50%);
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.nav-trigger {
   background: none;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 -0.3rem 0;
   cursor: pointer;
   line-height: 0;
 }
@@ -160,9 +167,10 @@ body.inner {
   pointer-events: auto;
 }
 
-.nav-link:nth-of-type(1) { transition-delay: 0ms; }
-.nav-link:nth-of-type(2) { transition-delay: 60ms; }
-.nav-link:nth-of-type(3) { transition-delay: 120ms; }
+.nav-link[data-i="1"] { transition-delay: 0ms; }
+.nav-link[data-i="2"] { transition-delay: 60ms; }
+.nav-link[data-i="3"] { transition-delay: 120ms; }
+.nav-link[data-i="4"] { transition-delay: 180ms; }
 
 /* ── ABOUT ── */
 .about-section {
@@ -302,6 +310,56 @@ body.inner {
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   text-transform: lowercase;
   flex-wrap: wrap;
+}
+
+/* ── EXPERIENCE ── */
+.experience-body {
+  padding: 2rem var(--side) 5rem;
+}
+
+.experience-body h1 {
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--white);
+  font-size: clamp(2.5rem, 7vw, 6.5rem);
+  line-height: 0.9;
+  text-transform: lowercase;
+  margin-bottom: 2.5rem;
+}
+
+.exp-table-wrap {
+  overflow-x: auto;
+}
+
+.exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Courier Prime', monospace;
+  font-style: normal;
+  font-size: clamp(14px, 1.3vw, 18px);
+  text-transform: lowercase;
+  min-width: 480px;
+}
+
+.exp-table th {
+  text-align: left;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 0 1rem 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+
+.exp-table td {
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
+}
+
+.exp-table th:last-child,
+.exp-table td:last-child {
+  padding-right: 0;
 }
 
 /* ── TABLET ── */
