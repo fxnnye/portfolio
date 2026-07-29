@@ -118,8 +118,8 @@ body.inner {
 }
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: baseline;
   padding: 5rem var(--side) 2rem;
   font-family: 'Courier Prime', monospace;
@@ -128,6 +128,19 @@ body.inner {
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   text-transform: lowercase;
   position: relative;
+}
+
+.topnav a:nth-child(2) {
+  justify-self: center;
+}
+
+.topnav a:last-child {
+  justify-self: end;
+}
+
+.topnav.topnav-2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-trigger {
