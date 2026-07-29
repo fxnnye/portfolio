@@ -134,7 +134,7 @@ body.inner {
   position: absolute;
   left: 50%;
   bottom: 2rem;
-  transform: translate(-50%, 0.65rem);
+  transform: translate(-50%, -0.5rem);
   background: none;
   border: none;
   padding: 0;
