@@ -53,14 +53,13 @@ body.home {
 
 .home-topnav {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  padding: 30vh var(--side) 2rem;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5rem var(--side) 2rem;
   font-family: 'Courier Prime', monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   text-transform: lowercase;
   position: relative;
 }
@@ -77,7 +76,7 @@ body.home {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20vh var(--side) 0;
+  padding: calc(20vh + 1cm) var(--side) 0;
 }
 
 .home-wordmark {
@@ -337,6 +336,22 @@ body.inner {
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   text-transform: lowercase;
   flex-wrap: wrap;
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 /* ── EXPERIENCE ── */
