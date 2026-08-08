@@ -77,7 +77,7 @@ body.home {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 50vh var(--side) 0;
+  padding: 20vh var(--side) 0;
 }
 
 .home-wordmark {
@@ -89,7 +89,6 @@ body.home {
   text-transform: lowercase;
   color: var(--white);
   user-select: none;
-  margin-bottom: 3rem;
 }
 
 .home-title-name {
@@ -342,7 +341,7 @@ body.inner {
 
 /* ── EXPERIENCE ── */
 .experience-body {
-  padding: 2rem var(--side) 5rem;
+  padding: 4cm var(--side) 5rem;
 }
 
 .experience-body h1 {
