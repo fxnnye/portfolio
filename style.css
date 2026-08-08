@@ -53,13 +53,14 @@ body.home {
 
 .home-topnav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5rem var(--side) 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 30vh var(--side) 2rem;
   font-family: 'Courier Prime', monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
   text-transform: lowercase;
   position: relative;
 }
