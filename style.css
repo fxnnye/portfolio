@@ -381,6 +381,26 @@ body.inner {
   overflow-x: auto;
 }
 
+.exp-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.exp-cta a {
+  font-family: 'Courier Prime', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  text-transform: lowercase;
+}
+
+.exp-cta-link {
+  opacity: 0.7;
+}
+
 .exp-table {
   width: 100%;
   border-collapse: collapse;
