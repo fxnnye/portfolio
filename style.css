@@ -62,6 +62,7 @@ body.home {
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   text-transform: lowercase;
   position: relative;
+  z-index: 10;
 }
 
 .home-nav-logo {
@@ -90,6 +91,7 @@ body.home {
   text-transform: lowercase;
   color: var(--white);
   user-select: none;
+  pointer-events: none;
   transform: scaleY(2.3);
   transform-origin: top center;
 }
