@@ -362,7 +362,7 @@ body.inner {
 
 /* ── EXPERIENCE ── */
 .experience-body {
-  padding: 4cm var(--side) 5rem;
+  padding: 6cm var(--side) 5rem;
   padding-bottom: var(--exp-gap, 5rem);
 }
 
