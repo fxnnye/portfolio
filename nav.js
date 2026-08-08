@@ -22,4 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealEls.forEach((el) => observer.observe(el));
   }
+
+  const expBody = document.querySelector('.experience-body');
+  const expContent = document.querySelector('.exp-content');
+  if (expBody && expContent) {
+    const setGap = () => {
+      expBody.style.setProperty('--exp-gap', `${expContent.offsetHeight}px`);
+    };
+    setGap();
+    window.addEventListener('resize', setGap);
+  }
 });

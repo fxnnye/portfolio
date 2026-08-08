@@ -74,20 +74,24 @@ body.home {
 
 .home-main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: calc(51vh + 1cm) 1rem 0;
+  padding: 1.5rem 0 0;
+  min-height: calc(100vh - 6.5rem);
 }
 
 .home-wordmark {
+  display: inline-block;
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-weight: 900;
   -webkit-text-stroke: 1px var(--white);
-  font-size: clamp(12rem, 36vw, 28rem);
+  font-size: clamp(7rem, 24.5vw, 32rem);
   line-height: 0.85;
   text-transform: lowercase;
   color: var(--white);
   user-select: none;
+  transform: scaleY(2.3);
+  transform-origin: top center;
 }
 
 .home-title-name {
@@ -357,6 +361,7 @@ body.inner {
 /* ── EXPERIENCE ── */
 .experience-body {
   padding: 4cm var(--side) 5rem;
+  padding-bottom: var(--exp-gap, 5rem);
 }
 
 .experience-body h1 {
