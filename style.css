@@ -544,4 +544,30 @@ body.inner {
   .contact-col-right {
     text-align: left;
   }
+
+  .home-topnav {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-main {
+    min-height: auto;
+    padding: 0.5rem 0 0;
+    justify-content: flex-start;
+  }
+
+  .home-wordmark {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: none;
+    font-size: calc((100vh - 6.5rem) * 0.362);
+    line-height: 0.85;
+  }
+
+  .experience-body {
+    padding-top: 3cm;
+  }
+
+  .exp-cta {
+    margin-top: 2rem;
+  }
 }
