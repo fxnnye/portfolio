@@ -14,7 +14,6 @@
 }
 
 .scroll-hint {
-  display: none;
   position: fixed;
   bottom: 2rem;
   left: 50%;
@@ -474,10 +473,6 @@ body.inner {
 @media (max-width: 900px) {
   :root {
     --side: clamp(2rem, 8vw, 6rem);
-  }
-
-  .scroll-hint {
-    display: block;
   }
 
   .about-section,
