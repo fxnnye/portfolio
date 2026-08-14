@@ -39,4 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
       scrollHint.classList.toggle('is-hidden', window.scrollY > 40);
     }, { passive: true });
   }
+
+  const wordmark = document.querySelector('.home-wordmark');
+  const homeMain = document.querySelector('.home-main');
+  if (wordmark && homeMain) {
+    const setWordmarkGap = () => {
+      if (window.innerWidth > 600) {
+        homeMain.style.removeProperty('padding-bottom');
+        return;
+      }
+      const mobileScale = 1.3;
+      const naturalHeight = wordmark.offsetHeight;
+      homeMain.style.setProperty('padding-bottom', `${naturalHeight * (mobileScale - 1)}px`);
+    };
+    setWordmarkGap();
+    window.addEventListener('resize', setWordmarkGap);
+  }
 });
