@@ -53,6 +53,7 @@
   --white: #ffffff;
   --pink: #E41695;
   --side: clamp(3.5rem, 14vw, 18rem);
+  --wm-scale: clamp(2.3, calc(2.3 + (1440px - 100vw) / 200px), 6);
 }
 
 body {
@@ -115,6 +116,7 @@ body.home {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1.5rem 0 0;
+  padding-bottom: calc(clamp(7rem, 24.5vw, 32rem) * 0.85 * (var(--wm-scale) - 1));
   min-height: calc(100vh - 6.5rem);
 }
 
@@ -129,7 +131,7 @@ body.home {
   color: var(--white);
   user-select: none;
   pointer-events: none;
-  transform: scaleY(2.3);
+  transform: scaleY(var(--wm-scale));
   transform-origin: top center;
 }
 
@@ -496,7 +498,6 @@ body.inner {
 
   .home-main {
     min-height: 92vh;
-    padding-bottom: calc(clamp(7rem, 24.5vw, 32rem) * 0.85 * 1.3);
   }
 }
 
