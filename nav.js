@@ -32,4 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setGap();
     window.addEventListener('resize', setGap);
   }
+
+  const scrollHint = document.querySelector('.scroll-hint');
+  if (scrollHint) {
+    window.addEventListener('scroll', () => {
+      scrollHint.classList.toggle('is-hidden', window.scrollY > 40);
+    }, { passive: true });
+  }
 });
