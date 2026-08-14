@@ -376,7 +376,7 @@ body.inner {
 
 /* ── EXPERIENCE ── */
 .experience-body {
-  padding: 6cm var(--side) 5rem;
+  padding: clamp(3cm, 12vw, 6cm) var(--side) 5rem;
   padding-bottom: var(--exp-gap, 5rem);
 }
 
@@ -469,6 +469,11 @@ body.inner {
 
   .about-section-2 {
     padding-bottom: 4rem;
+  }
+
+  .home-main {
+    min-height: auto;
+    padding-bottom: calc(clamp(7rem, 24.5vw, 32rem) * 0.85 * 1.3);
   }
 }
 
