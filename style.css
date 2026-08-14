@@ -495,7 +495,7 @@ body.inner {
   }
 
   .home-main {
-    min-height: auto;
+    min-height: 92vh;
     padding-bottom: calc(clamp(7rem, 24.5vw, 32rem) * 0.85 * 1.3);
   }
 }
