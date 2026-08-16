@@ -496,9 +496,6 @@ body.inner {
     padding-bottom: 4rem;
   }
 
-  .home-main {
-    min-height: 92vh;
-  }
 }
 
 /* ── MOBILE ── */
@@ -579,11 +576,7 @@ body.inner {
   }
 
   .home-main {
-    min-height: 92vh;
-  }
-
-  .experience-body {
-    padding-top: 3cm;
+    min-height: 71vh;
   }
 
   .exp-cta {
