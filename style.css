@@ -522,6 +522,10 @@ body.inner {
     justify-self: auto;
   }
 
+  .contact-banner-wrap {
+    margin-top: 0;
+  }
+
   .contact-banner {
     margin-top: 0;
     height: auto;
