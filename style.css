@@ -455,6 +455,18 @@ body.inner {
   column-gap: 1.25rem;
 }
 
+.insp-grid.is-cols {
+  display: flex;
+  align-items: flex-start;
+  column-count: auto;
+  gap: 1.25rem;
+}
+
+.insp-col {
+  flex: 1;
+  min-width: 0;
+}
+
 .insp-item {
   display: inline-block;
   width: 100%;
@@ -651,6 +663,10 @@ a.insp-card:hover {
 
   .insp-grid {
     column-gap: 0.75rem;
+  }
+
+  .insp-grid.is-cols {
+    gap: 0.75rem;
   }
 
   .insp-item {
