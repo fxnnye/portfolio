@@ -409,6 +409,7 @@ body.inner {
 }
 
 .experience-body h1,
+.projects h1,
 .inspiration h1 {
   font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
   font-style: normal;
@@ -443,6 +444,77 @@ body.inner {
 
 .exp-cta-text {
   color: var(--white);
+}
+
+/* ── PROJECTS ── */
+.projects {
+  padding: 0 var(--side) clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(14px, 1.3vw, 18px);
+  line-height: 1.5;
+  text-transform: lowercase;
+}
+
+.proj-card h2 {
+  font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--white);
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: 1;
+}
+
+.proj-card p {
+  flex: 1;
+}
+
+.proj-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.proj-links a {
+  padding: 0.25rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.proj-links a:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.proj-cat {
+  align-self: flex-end;
+  opacity: 0.55;
+  font-size: 0.85em;
+}
+
+@media (max-width: 700px) {
+  .proj-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .proj-card {
+    padding: 1.1rem;
+  }
 }
 
 /* ── INSPIRATION ARCHIVE ── */
