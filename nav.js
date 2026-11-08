@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const scrollHint = document.querySelector('.scroll-hint');
   if (scrollHint) {
+    const fits = () => document.documentElement.scrollHeight <= window.innerHeight + 40;
+    if (fits()) scrollHint.classList.add('is-hidden');
     window.addEventListener('scroll', () => {
       scrollHint.classList.toggle('is-hidden', window.scrollY > 40);
     }, { passive: true });
