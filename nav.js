@@ -103,8 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (scrollHint) {
     const fits = () => document.documentElement.scrollHeight <= window.innerHeight + 40;
     if (fits()) scrollHint.classList.add('is-hidden');
-    window.addEventListener('scroll', () => {
-      scrollHint.classList.toggle('is-hidden', window.scrollY > 40);
-    }, { passive: true });
+    // on pages with a revealed section below the fold, hide the arrow once that section shows up
+    const until = document.querySelector('.about-section-2 .reveal');
+    if (until) {
+      new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) scrollHint.classList.add('is-hidden');
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }).observe(until);
+    } else {
+      window.addEventListener('scroll', () => {
+        scrollHint.classList.toggle('is-hidden', window.scrollY > 40);
+      }, { passive: true });
+    }
   }
 });
